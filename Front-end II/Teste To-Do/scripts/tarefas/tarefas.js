@@ -11,26 +11,33 @@ botaoNovaTarefa.addEventListener('click', function(event){
          
     };
 
-    fetch('https://ctd-todo-api.herokuapp.com/v1/tasks', {
+    fetch(`https://ctd-todo-api.herokuapp.com/v1/tasks`, {
 
         method: 'POST',
-        body: JSON.stringify(criandoTarefas),
-        headers: “Authorization” :
-        “eyJhbGciOiJIUzIǻNiIsInRǿcCIȀIkpXVCJȃ.eyJzdWIiOiIxMjMǺNTYǽODkwIi
-        wibmFtZSIȀIkpvaGǾgRGȃlIiwiaWFǺIjoxNTEǼMjMǿMDIyfQ.SflKxwRJSMeK
-        KFǼQTǾfwpMeJfǽȀPOkȀyJV_adQsswǿc”
-        { 'content-type':'application/json'}
+        headers: “Authorization” : {
+            
+            "Content-type" : 'application/json'
+        
+        }
 
-
-    })
-
-    .then(function(response){
-        return response.json()
-
+        body: JSON.stringify(criandoTarefas)
 
     })
+
+    .then(response => response.json())   
 
 console.log(criandoTarefas);
 
 })
 
+onload = function(){
+    let tokenJwt = this.sessionStorage.getItem("jwt");
+
+        if (!tokenJwt) {
+            //alert("Você não tem permissão para acessar essa pagina...")
+            location.href = "index.html"
+        } else {
+            console.log(tokenJwt);
+        }
+
+}

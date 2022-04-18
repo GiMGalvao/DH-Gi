@@ -5,6 +5,7 @@ let senhaCriarConta = document.getElementById("senha");
 // let repetirSenhaCriarConta = getElementById("repetirSenha");
 let botaoCadastro = document.getElementById("botaoCadastro")
 
+let cadastro = false;
 
 
 botaoCadastro.addEventListener('click', function(event) {
@@ -19,20 +20,16 @@ botaoCadastro.addEventListener('click', function(event) {
       };
 
     
-    fetch('https://ctd-todo-api.herokuapp.com/v1/users',    {
+      fetch(`https://ctd-todo-api.herokuapp.com/v1/users`, {
         method: 'POST',
-        body: JSON.stringify(dados),
         headers: {
-            'content-type':'application/json'
-
-        }
+            "Content-type" : 'application/json'
+        },
+        body: JSON.stringify(dados)
     
     })
 
-    .then(function(response){
-        return response.json()
-
-    })
+    .then(response => response.json())
     
  console.log(dados); 
 

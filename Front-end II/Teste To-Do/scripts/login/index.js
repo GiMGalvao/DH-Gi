@@ -8,7 +8,6 @@ let campoSenhaLoginNormalizado;
 let emailEValido = false;
 let senhaEValido = false;
 
-
 botaoSalvar.setAttribute('disabled', true);
 botaoSalvar.innerText = "Bloqueado"
 
@@ -96,14 +95,52 @@ campoSenhaLogin.addEventListener('blur', function () {
         senhaEValido = false;
     }
     validaTelaDeLogin();
-});
 
+    let usuarioObjetoJson = JSON.stringify(usuarioObjeto);
 
+    let endPoint = {
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: usuarioObjetoJson
+    }
+    
+    let urlEndPoint = "https://ctd-todo-api.herokuapp.com/v1/users/login"
+    
+    fetch(urlEndPoint, endPoint)
+    .then(response => {
+        if(response.status == 201){
+            return response.json()
+        }else{
+            throw response.status
+        }
+    })
+    .then(data => data.jwt)
+    .then(data => {
+        loginOk(data)
+        
+    })
+    
+    .catch(error => {
+        if(error == 404 || error == 400){
+            exibeErro.innerText = "Usuário ou senha incorreto."
+            exibirErroApi(exibeErro)
+        }else{
+            exibeErro.innerText = "Tente novamente mais tarde."
+            exibirErroApi(exibeErro)
+        }
 
-
-
-
-
-
-
-
+        function loginSucesso(jwtRecebido){
+            document.cookie = `jwt=${jwtRecebido}`;
+        
+            alert("sucesso,você será logado no sistema.");
+        
+            window.location.href = "tarefas.html"
+        }
+        
+    
+    })
+    
+ 
+}

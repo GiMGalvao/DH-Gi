@@ -21,34 +21,38 @@
     <img src="./assets/pessoa-signup.png" alt="">
   </div>
   <div class="right">
-    <form>
+    <form action="" method="post" id="form-cadastro">
       <div class="form-header">
         <p>To-Do App</p>
       </div>
 
       <label>
         Nome:
-        <input type="text"  value="nome" id="nome">
-        <small id="nomeNovaConta"></small>
+        <input type="text" name="nome" id="nome" >
+        <small class="msg-erro msg-nome"></small>
       </label>
       <label>
         Apelido:
-        <input type="text" id="apelido" value="apelido">
+        <input type="text" name="apelido" id="apelido" >
+        <small class="msg-erro msg-apelido"></small>
       </label>
       <label>
         Email:
-        <input type="text" id="email" value="email">
+        <input type="text" name="email" id="email">
+        <small class="msg-erro msg-email"></small>
       </label>
       <label>
         Senha:
-        <input type="password" id="senha" value="senha">
+        <input type="password" name="senha" id="senha">
+        <small class="msg-erro msg-senha"></small>
       </label>
       <label>
         Repetir senha:
-        <input type="password" id="repetirSenha" value="senha">
+        <input type="password" name="repetirSenha" id="senha2">
+        <small class="msg-erro msg-repetir-senha"></small>
       </label>
 
-      <button id="botaoCadastro">Criar conta</button>
+      <button type="submit" id="botaoCadastro">Criar conta</button>
 
     </form>
     <div class="ingressar">
@@ -62,3 +66,6 @@
 </body>
 
 </html>
+
+
+

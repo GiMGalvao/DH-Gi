@@ -1,5 +1,3 @@
-package integrador;
-
 public abstract class Vendedor {
 
     //validação que usa propriedades de subclasse apenas!!
@@ -11,7 +9,7 @@ public abstract class Vendedor {
         protected int pontosPorVenda;
 
 
-    public Vendedor(String nome, int vendas, int pontosPorVenda) {
+    public Vendedor(String nome) {
         this.nome = nome;
         this.vendas = vendas;
         this.pontosPorVenda = pontosPorVenda;
@@ -29,7 +27,18 @@ public abstract class Vendedor {
         /*TEMPLATE METHOD - recebe o total de pontos calculados a partir
         da subclasse e valida cada item para retornar a categoria*/
         public String mostrarCategoria(){
-            return "";
+
+            if(calcularPontos() < 20){
+                return "O " + nome + " esta na Categoria = NOVATO";
+            } else if (calcularPontos()<31) {
+                return "O " + nome + " esta na Categoria = APRENDIZ";
+            } else if (calcularPontos()<41) {
+                return "O " + nome + " esta na Categoria = BOM";
+            }else if (calcularPontos()>=41) {
+                return "O " + nome + " esta na Categoria = MESTRE";
+
+            }
+            return mostrarCategoria();
         }
 }
 

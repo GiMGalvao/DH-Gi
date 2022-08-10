@@ -1,10 +1,12 @@
-public class Serie implements ISerie{
-
+public class Filme {
     private String nome;
+    private String pais;
     private String link;
 
-
-    public Serie(String nome) {
+    public Filme(String nome, String pais, String link) {
+        this.nome = nome;
+        this.pais = pais;
+        this.link = link;
     }
 
     public String getNome() {
@@ -15,6 +17,14 @@ public class Serie implements ISerie{
         this.nome = nome;
     }
 
+    public String getPais() {
+        return pais;
+    }
+
+    public void setPais(String pais) {
+        this.pais = pais;
+    }
+
     public String getLink() {
         return link;
     }
@@ -22,13 +32,4 @@ public class Serie implements ISerie{
     public void setLink(String link) {
         this.link = link;
     }
-
-
-    @Override
-    public String getSerie(String nome) throws SerieNaoHabilitadoException {
-
-        System.out.println("www." + nome + ".com.br");
-        return nome;
-    }
-
 }

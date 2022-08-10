@@ -1,5 +1,5 @@
 public interface ISerie {
 
-  public int getSerie (String nomeSerie) throws SerieNaoHabilitadoException;
+  public String getSerie (String nome) throws SerieNaoHabilitadoException;
     }
 

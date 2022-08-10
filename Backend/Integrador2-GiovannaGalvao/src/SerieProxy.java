@@ -1,14 +1,17 @@
-import java.lang.constant.Constable;
+public class SerieProxy implements ISerie{
 
-public class SerieProxy implements ISerie {
-
+    Serie serie = new Serie();
    private int qtdViews;
 
-   public SerieProxy(int qtdViews) {
-      this.qtdViews = qtdViews;
-   }
+    public SerieProxy() {
+//
+    }
 
-    public int getQtdViews() {
+//    public SerieProxy(Serie serie) {
+//        this.serie = serie;
+//    }
+
+    public int getQtdViews(int i) {
         return qtdViews;
     }
 
@@ -17,16 +20,23 @@ public class SerieProxy implements ISerie {
     }
 
 
+    public int contadorViews(){
 
-    @Override
-   public int getSerie(String nomeSerie) throws SerieNaoHabilitadoException {
-    int serie = qtdViews;
+       serie = this.qtdViews =+ 1;
 
-    if(getQtdViews() < 5 ){
-       throw new SerieNaoHabilitadoException(nomeSerie + " nao disponivel, pois tem qtde de views = " + qtdViews );
-
+        return qtdViews;
     }
 
-      return serie;
-   }
+    @Override
+    public String getSerie(String nome) throws SerieNaoHabilitadoException {
+
+       if (contadorViews() <= 5){
+
+       return "A Série " + nome + "já vai começar!" ;
+    }else{
+           throw new SerieNaoHabilitadoException("Máximo de series assistidas atingido!");
+       }
+
+       }
+
 }

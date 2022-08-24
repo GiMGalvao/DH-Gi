@@ -7,6 +7,10 @@ public class Serie implements ISerie{
     public Serie(String nome) {
     }
 
+    public Serie() {
+
+    }
+
     public String getNome() {
         return nome;
     }

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="04 - Chain of Responsibility">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Chain_Responsibility.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Mesa_Qualidade.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

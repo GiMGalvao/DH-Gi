@@ -1,0 +1,5 @@
+function acao (){
+
+    alert("Hi")
+
+}

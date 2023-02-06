@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400&display=swap');
+
+body{
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: #b1f7f3;
+  padding: 0 20px;
+}
+
+
+.titulo{
+
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin: 50px 0px;
+    
+
+}
+
+
+.button {
+  text-transform: uppercase;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  background-color: #d8eaee;
+  color: #3965f5;
+  border: 1px solid #d8eaee;
+   margin-bottom: 5px;
+  -webkit-transition: ease .3s;
+  transition: ease .3s;
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size:20px;
+}
+
+.button:hover {
+  background-color:  white;
+  color: #d8eaee;
+  border: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+
+
+
+
+@media (min-width: 1280px) {
+  .button {
+    display: inline-block;
+    margin-left: 5px;
+    margin: 0;
+    width: auto;
+  }
+ 
+}
+
+
+
+
+.formulario{
+background-color: #3965f5;
+display: block;
+padding: 40px;
+border-radius: 40px;
+color: #d8eaee;
+margin-top:10px;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-size: 30px;
+text-align: center;
+}
+
+
+.form-control{
+
+    background-color: #d8eaee;
+    margin-top: 20px;
+
+
+}
+
+#footer {
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #3965f5;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 20px;
+  padding-top: 20px;
+  
+}
+
+
+.formulario img {
+  width: 100%;
+}

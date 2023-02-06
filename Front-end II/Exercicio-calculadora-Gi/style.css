@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+#calculadora{
+    background-color: blueviolet;
+    width: 280px;
+    height: 310px;
+   text-align: center;
+   border: solid 3px blueviolet ;
+   border-radius: 20px;
+   margin: auto;
+ 
+}
+
+#resultado{ 
+
+    background-color: aliceblue;
+    margin: 30px 0px 20px 30px;
+    width: 220px;
+    height: 50px;
+    border-radius: 4px;
+    border: solid black;
+}
+
+input[type=button]{
+
+
+background-color: rgb(204, 204, 245);
+margin-left: 4px;
+margin-top: 4px;
+font-size: 25px;
+display: inline-block;
+height: 40px;
+width: 50px;
+border-radius: 4px;
+border: solid black;
+font-family: 'Dancing Script', cursive;
+
+}
+
+.titulo{ 
+    text-align: center;
+    font-family: 'Dancing Script';
+    padding:40px;
+}

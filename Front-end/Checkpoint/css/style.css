@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;700&family=Lobster&family=Playfair+Display:ital@1&display=swap');
+
+
+.body1{ 
+    
+        background-image: url(" ../img/sp.png");
+        height: 1000;
+        width: 2100;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 100%;
+               
+    }
+
+
+.cabecalho{ 
+    background-color: #FFEAFE;
+    font-family: 'Lobster', cursive;;
+    color:rgba(240, 0, 140, 0.925);
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.cidade{
+    text-align: center;
+    font-size: 25px;
+    font-family: Andale Mono, monospace;
+    margin-top: 100px;
+    margin-right:200px;
+    margin-left:200px;
+
+}
+
+.video{ 
+    height: 1280px;
+    width: 720px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: Andale Mono, monospace;
+}
+
+.curiosidades{
+
+    font-family: 'Lobster', cursive;;
+    color:rgba(240, 0, 140, 0.925);
+    text-align: center;
+
+}
+
+.lista{ 
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: Andale Mono, monospace;
+   
+}
+
+.redes-sociais{
+    margin-top: 100px;
+    display: inline;
+    width:  50px;
+    height: 50px;
+
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;700&family=Lobster&family=Playfair+Display:ital@1&display=swap');
+
+
+.body1{ 
+    
+        background-image: url(" ../img/sp.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 100%;
+     
+               
+    }
+
+
+.cabecalho{ 
+    background-color: #FFEAFE;
+    font-family: 'Lobster', cursive;;
+    color:rgba(240, 0, 140, 0.925);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    margin: 100px;
+}
+
+.cidade{
+    text-align: center;
+    font-size: 25px;
+    font-family: Andale Mono, monospace;
+    margin-top: 50px;
+    margin-right:200px;
+    margin-left:200px;
+
+}
+
+.video{ 
+    height: 1280px;
+    width: 720px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: Andale Mono, monospace;
+   
+}
+
+.curiosidades{
+
+    font-family: 'Lobster', cursive;;
+    color:rgba(240, 0, 140, 0.925);
+    text-align: center;
+
+}
+
+
+.redes-sociais{
+    margin-top: 100px;
+    display: inline;
+    width:  50px;
+    height: 50px;
+
+}
+
+.pag{ 
+    text-align: center;
+    font-size: 25px;
+    font-family: Andale Mono, monospace;
+    margin-bottom: 150px;
+    background-color: #FFEAFE;
+    padding: 30px;
+    margin:100px;
+
+}
+
+.form{ 
+    background-color: #FFEAFE;
+    height: 650px;
+    width: 350px;;
+    font-size: 20px;
+    font-family: Andale Mono, monospace;
+    padding: 40px;
+    padding-bottom: 50px;
+    margin: auto;
+    border: 3px solid rgba(240, 0, 140, 0.925);
+    border-radius: 10px;
+  
+   
+}
+
+.button{ 
+
+    background-color:rgba(240, 0, 140, 0.925);
+    border:  solid #FFEAFE;
+  border-radius: 15px;
+  border-style: double;
+
+
+}
+
+input:focus {
+    background: rgb(255, 255, 255);
+    transform:  scale(1.4);
+    
+  }
+
+a:hover{ 
+    background-color: rgba(240, 0, 140, 0.925); 
+
+}
+

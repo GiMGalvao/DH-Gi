@@ -5,7 +5,11 @@ import com.example.ClinicaOdontologica.entity.dto.CredenciaisDTO;
 import com.example.ClinicaOdontologica.entity.dto.DentistaDTO;
 import com.example.ClinicaOdontologica.entity.dto.TokenDTO;
 import com.example.ClinicaOdontologica.security.JwtService;
+<<<<<<< HEAD
 import com.example.ClinicaOdontologica.repository.impl.DentistaServiceImpl;
+=======
+import com.example.ClinicaOdontologica.service.impl.DentistaServiceImpl;
+>>>>>>> 195489bf3aa125d384774c08dc0f9b16a9bce7a4
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

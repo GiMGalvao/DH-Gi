@@ -3,8 +3,13 @@ package com.example.ClinicaOdontologica.unitary;
 import com.example.ClinicaOdontologica.entity.Paciente;
 import com.example.ClinicaOdontologica.entity.dto.PacienteDTO;
 import com.example.ClinicaOdontologica.repository.PacienteRepository;
+<<<<<<< HEAD
 import com.example.ClinicaOdontologica.repository.impl.EnderecoServiceImpl;
 import com.example.ClinicaOdontologica.repository.impl.PacienteServiceImpl;
+=======
+import com.example.ClinicaOdontologica.service.impl.EnderecoServiceImpl;
+import com.example.ClinicaOdontologica.service.impl.PacienteServiceImpl;
+>>>>>>> 195489bf3aa125d384774c08dc0f9b16a9bce7a4
 import common.PacienteMock;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;

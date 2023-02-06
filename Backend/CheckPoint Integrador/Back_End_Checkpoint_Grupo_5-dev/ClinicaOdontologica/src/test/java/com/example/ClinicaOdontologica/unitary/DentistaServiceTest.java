@@ -3,7 +3,11 @@ package com.example.ClinicaOdontologica.unitary;
 import com.example.ClinicaOdontologica.entity.Dentista;
 import com.example.ClinicaOdontologica.entity.dto.DentistaDTO;
 import com.example.ClinicaOdontologica.repository.DentistaRepository;
+<<<<<<< HEAD
 import com.example.ClinicaOdontologica.repository.impl.DentistaServiceImpl;
+=======
+import com.example.ClinicaOdontologica.service.impl.DentistaServiceImpl;
+>>>>>>> 195489bf3aa125d384774c08dc0f9b16a9bce7a4
 import common.DentistaMock;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;

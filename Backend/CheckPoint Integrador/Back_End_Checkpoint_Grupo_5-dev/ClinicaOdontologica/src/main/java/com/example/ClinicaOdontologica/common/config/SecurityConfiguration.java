@@ -2,8 +2,13 @@ package com.example.ClinicaOdontologica.common.config;
 
 import com.example.ClinicaOdontologica.security.JwtRequestFilter;
 import com.example.ClinicaOdontologica.security.JwtService;
+<<<<<<< HEAD
 import com.example.ClinicaOdontologica.repository.impl.DentistaServiceImpl;
 import com.example.ClinicaOdontologica.repository.impl.PacienteServiceImpl;
+=======
+import com.example.ClinicaOdontologica.service.impl.DentistaServiceImpl;
+import com.example.ClinicaOdontologica.service.impl.PacienteServiceImpl;
+>>>>>>> 195489bf3aa125d384774c08dc0f9b16a9bce7a4
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpMethod;
 

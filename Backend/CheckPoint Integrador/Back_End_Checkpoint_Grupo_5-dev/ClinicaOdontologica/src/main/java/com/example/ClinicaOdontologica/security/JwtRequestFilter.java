@@ -1,12 +1,22 @@
 package com.example.ClinicaOdontologica.security;
 
+<<<<<<< HEAD
 import com.example.ClinicaOdontologica.repository.impl.DentistaServiceImpl;
 import com.example.ClinicaOdontologica.repository.impl.PacienteServiceImpl;
+=======
+import com.example.ClinicaOdontologica.service.impl.DentistaServiceImpl;
+import com.example.ClinicaOdontologica.service.impl.PacienteServiceImpl;
+import io.jsonwebtoken.Claims;
+>>>>>>> 195489bf3aa125d384774c08dc0f9b16a9bce7a4
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+<<<<<<< HEAD
+=======
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+>>>>>>> 195489bf3aa125d384774c08dc0f9b16a9bce7a4
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.web.filter.OncePerRequestFilter;
 

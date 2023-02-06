@@ -1,7 +1,11 @@
 package com.example.ClinicaOdontologica.controller;
 
 import com.example.ClinicaOdontologica.entity.dto.ConsultaDTO;
+<<<<<<< HEAD
 import com.example.ClinicaOdontologica.repository.impl.ConsultaServiceImpl;
+=======
+import com.example.ClinicaOdontologica.service.impl.ConsultaServiceImpl;
+>>>>>>> 195489bf3aa125d384774c08dc0f9b16a9bce7a4
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

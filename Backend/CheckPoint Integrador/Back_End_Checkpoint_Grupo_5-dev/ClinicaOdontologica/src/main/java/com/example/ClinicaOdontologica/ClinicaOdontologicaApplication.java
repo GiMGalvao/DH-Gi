@@ -1,7 +1,12 @@
 package com.example.ClinicaOdontologica;
 import com.example.ClinicaOdontologica.entity.dto.DentistaDTO;
 import com.example.ClinicaOdontologica.enums.Roles;
+<<<<<<< HEAD
 import com.example.ClinicaOdontologica.repository.impl.DentistaServiceImpl;
+=======
+import com.example.ClinicaOdontologica.service.impl.DentistaServiceImpl;
+import com.example.ClinicaOdontologica.service.impl.EnderecoServiceImpl;
+>>>>>>> 195489bf3aa125d384774c08dc0f9b16a9bce7a4
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

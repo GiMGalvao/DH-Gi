@@ -1,11 +1,21 @@
 package com.example.ClinicaOdontologica.unitary;
 
 import com.example.ClinicaOdontologica.entity.Consulta;
+<<<<<<< HEAD
 import com.example.ClinicaOdontologica.entity.dto.ConsultaDTO;
 import com.example.ClinicaOdontologica.repository.ConsultaRepository;
 import com.example.ClinicaOdontologica.repository.impl.ConsultaServiceImpl;
 import com.example.ClinicaOdontologica.repository.impl.DentistaServiceImpl;
 import com.example.ClinicaOdontologica.repository.impl.PacienteServiceImpl;
+=======
+import com.example.ClinicaOdontologica.entity.Dentista;
+import com.example.ClinicaOdontologica.entity.dto.ConsultaDTO;
+import com.example.ClinicaOdontologica.entity.dto.DentistaDTO;
+import com.example.ClinicaOdontologica.repository.ConsultaRepository;
+import com.example.ClinicaOdontologica.service.impl.ConsultaServiceImpl;
+import com.example.ClinicaOdontologica.service.impl.DentistaServiceImpl;
+import com.example.ClinicaOdontologica.service.impl.PacienteServiceImpl;
+>>>>>>> 195489bf3aa125d384774c08dc0f9b16a9bce7a4
 import common.ConsultaMock;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;

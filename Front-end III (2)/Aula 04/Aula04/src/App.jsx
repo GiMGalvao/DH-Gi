@@ -1,17 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Component from './Components/Component'
+import InputComponent from "./Components/InputComponent"
+import FormComponent from "./Components/FormComponent"
 
-function App() {
-  
-
-  return (
+function App (){
+  return ( 
     <>
-     <Component name="Giovanna"></Component> 
+
+    <FormComponent> 
+
+    <InputComponent 
+      label="Titulo"
+      type ="text"
+    /> 
+
+      <br />
+      <br />
       
+      <InputComponent 
+        label="Descrição"
+        type="text"
+      /> 
+
+      <br />
+      <br />
+
+      <InputComponent 
+        label="Valor"
+        type="number"
+      /> 
+
+      <br />
+      <br />
+
+      <InputComponent 
+        label="Img Url" 
+        type="url"
+      /> 
+
+      <br />
+      <br />
+
+      <button>Salvar</button>
+
+    </FormComponent>   
+   
+        
     </>
+
   )
+
 }
 
 export default App

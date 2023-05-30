@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script&display=swap');
+
+
+.label{
+    font-size: 20pt;
+
+}
+
+.input{ 
+    border-radius: 20%;
+    background-color: #b3e8f8;
+    font-family: 'Cookie', cursive;
+    font-size: 15pt;
+
+}

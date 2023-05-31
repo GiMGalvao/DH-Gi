@@ -7,6 +7,7 @@ function InputComponent({ title, type, value, fnOnChange }) {
             <br />
 
             <input className={style.input}
+               
                 type={type ?? "text"}
                 value={value}
                 onChange={fnOnChange}
